@@ -1,0 +1,15 @@
+{
+  "name": "SolarServer",
+  "version": "0.0.0",
+  "description": "This Node server will gather data from the solar panel on the roof of 721 Broadway NY, NY",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aankit Patel",
+  "license": "BSD",
+  "dependencies": {
+    "express": "^3.5.1",
+    "logfmt": "^1.1.2"
+  }
+}
