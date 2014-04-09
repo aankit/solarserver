@@ -7,7 +7,7 @@ app.use(logfmt.requestLogger());
 
 var menus = require('./data/menus').data;
 
-app.get('/data', function(req, res){
+app.get('/tables', function(req, res){
 	res.render('template.ejs', {
 		title: 'Data Tables',
 		menus: menus
