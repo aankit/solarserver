@@ -1,5 +1,9 @@
 exports.data = [
 	{
+		'url': '',
+		'name': 'Home'
+	},
+	{
 		'url': 'tables',
 		'name':	'Tables'
 	},
