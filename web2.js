@@ -28,6 +28,13 @@ app.get('/poetry', function(req, res){
 	});
 });
 
+app.get('/signup', function(req, res){
+	res.render('template.ejs', {
+		title: 'Sign up for updates on when the battery is charged!',
+		menus: menus
+	});
+});
+
 app.get('/', function(req, res){
 	res.render('template.ejs', {
 		title: 'Welcome',
