@@ -14,5 +14,9 @@ exports.data = [
 	{
 		'url': 'poetry',
 		'name': 'Poetry'
+	},
+	{
+		'url': 'signup',
+		'name': 'Signup'
 	}
 ];
