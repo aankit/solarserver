@@ -1,0 +1,26 @@
+<h1>Data</h1>
+	<p>Data from the solar panel display below</p>
+
+	<p>Current Week:</p>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Time</th>
+				<th>Panel Voltage</th>
+				<th>Panel Current</th>
+				<th>Battery Voltage</th>
+				<th>Battery Current</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each readings}}
+				<tr>
+					<td>{{time}}</td>
+					{{#each data}}
+						<td>{{this}}</td>
+					{{/each}}
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
