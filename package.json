@@ -1,16 +1,16 @@
 {
-  "name": "SolarServer",
+  "name": "dws",
   "version": "0.0.0",
-  "description": "This Node server will gather data from the solar panel on the roof of 721 Broadway NY, NY",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "Aankit Patel",
-  "license": "BSD",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^3.5.1",
-    "logfmt": "^1.1.2",
-    "ejs": "^1.0.0"
+    "express3-handlebars": "^0.5.0"
   }
 }
