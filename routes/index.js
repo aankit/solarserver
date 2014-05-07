@@ -111,6 +111,7 @@ module.exports = function(){
 				}
 			});
 			//console.log(dataRec);
+			res.status(200);
 			res.end();
 		});
 	};
