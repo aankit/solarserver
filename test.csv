@@ -1,0 +1,5 @@
+measure, reading
+panel_voltage, 120
+battery_voltage, 12
+panel_current, 20
+battery_current, 12

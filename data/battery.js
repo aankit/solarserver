@@ -1,0 +1,3 @@
+var battery = [
+	{key: 'xyz'}
+];

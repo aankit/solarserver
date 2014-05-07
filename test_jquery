@@ -1,0 +1,24 @@
+<p>
+	<input type="radio" name="measure" id="voltage" value="voltage">
+	<input type="radio" name="measure" id="amps" value="amps">
+	<input type="radio" name="measure" id="all" value="all">
+	<input type="button" id="clicker" value="Update">
+</p>
+
+<p id="results"></div>
+
+<script>
+	$("document").ready(function(){
+		$('#clicker').click(function() {
+			$('#results').html('loading...');
+			console.log('something');
+			var selected = $('#measure').val();
+			console.log(selected);
+			$.get('/query', {'measure': selected},
+				function(data){
+					$('#results').html(data);
+				}
+			);
+		})
+	})
+</script>

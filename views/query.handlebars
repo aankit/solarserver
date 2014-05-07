@@ -1,0 +1,47 @@
+<h1>Data</h1>
+
+<p>Data from the solar panel display below</p>
+
+<p>
+	<input type="radio" name="measure" id="voltage" value="voltage"> Voltage</br>
+	<input type="radio" name="measure" id="amps" value="amps"> Amps</br>
+	<input type="radio" name="measure" id="all" value="all"> All</br>
+	<input type="button" id="clicker" value="Update">
+</p>
+
+<table id="main" class="table">
+	<thead>
+		<tr>
+			<th>Time</th>
+			<th>Measure</th>
+			<th>Reading</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each readings}}
+			<tr>
+				<td>{{this.timestamp}}</td>
+				<td>{{this.measure}}</td>
+				<td>{{this.reading}}</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table></div>
+
+<script>
+	$("document").ready(function(){
+		$('#clicker').click(function() {
+			$('#main').html('loading...');
+			var selected = $("input:radio[name=measure]:checked").val();
+			$.get('/query?measure=' + selected,
+				function(data){
+					console.log(data);
+					$('#main').html(data);
+				}
+			);
+		})
+	})
+</script>
+
+
+
